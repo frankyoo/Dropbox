@@ -3,7 +3,7 @@ First pass at Dropbox assignment; will keep chipping away at optionals until Sun
 
 This is an iOS demo application for the signup/signin flow of the Dropbox app. This includes seques, navigation view controllers, tab view controllers, scroll views, and some button configuration.
 
-Time spent: 7 hours spent in total
+Time spent: 9 hours spent in total
 
 Completed user stories:
 
@@ -17,7 +17,7 @@ Completed user stories:
  * [x] Required: User can tap the area for "Having trouble signing in?"
  * [x] Required: User can log out from the Settings screen.
  * [x] Optional: Add a detail view for one of the files and implement favoriting the file. Configure a Button
- * [-] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard. Dismissing the Keyboard
+ * [x] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard. Dismissing the Keyboard
  * [-] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
  * [-] Create a custom free form view controller that is wide enough for 4 screens. Creating Custom View Controllers, Creating a Free Form View Controller
  * [-] Add a UIScrollView with paging enabled.
