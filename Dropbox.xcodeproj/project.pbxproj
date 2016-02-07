@@ -14,6 +14,18 @@
 		C2A3706E1C633C1F00ED3B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A3706C1C633C1F00ED3B18 /* LaunchScreen.storyboard */; };
 		C2A370791C633C2000ED3B18 /* DropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370781C633C2000ED3B18 /* DropboxTests.swift */; };
 		C2A370841C633C2000ED3B18 /* DropboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370831C633C2000ED3B18 /* DropboxUITests.swift */; };
+		C2A370921C634C4900ED3B18 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370911C634C4900ED3B18 /* NewAccountViewController.swift */; };
+		C2A370941C634D2000ED3B18 /* Segue1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370931C634D2000ED3B18 /* Segue1ViewController.swift */; };
+		C2A370961C634EA500ED3B18 /* NewAccountFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370951C634EA500ED3B18 /* NewAccountFormViewController.swift */; };
+		C2A370981C634FBD00ED3B18 /* Segue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370971C634FBD00ED3B18 /* Segue2ViewController.swift */; };
+		C2A3709A1C63511200ED3B18 /* SignInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370991C63511200ED3B18 /* SignInFormViewController.swift */; };
+		C2A3709C1C63573800ED3B18 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3709B1C63573800ED3B18 /* TermsViewController.swift */; };
+		C2A3709E1C67208000ED3B18 /* SettingsScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3709D1C67208000ED3B18 /* SettingsScrollViewController.swift */; };
+		C2A370A01C67269A00ED3B18 /* PhotosScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A3709F1C67269A00ED3B18 /* PhotosScrollViewController.swift */; };
+		C2A370A21C6727F000ED3B18 /* ExistingSettingsScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370A11C6727F000ED3B18 /* ExistingSettingsScrollViewController.swift */; };
+		C2A370A41C6728BB00ED3B18 /* FilesScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370A31C6728BB00ED3B18 /* FilesScrollViewController.swift */; };
+		C2A370A61C672B8400ED3B18 /* FavoritesScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370A51C672B8400ED3B18 /* FavoritesScrollViewController.swift */; };
+		C2A370A81C673A6100ED3B18 /* PdfDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A370A71C673A6100ED3B18 /* PdfDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		C2A3707F1C633C2000ED3B18 /* DropboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A370831C633C2000ED3B18 /* DropboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxUITests.swift; sourceTree = "<group>"; };
 		C2A370851C633C2000ED3B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A370911C634C4900ED3B18 /* NewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		C2A370931C634D2000ED3B18 /* Segue1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue1ViewController.swift; sourceTree = "<group>"; };
+		C2A370951C634EA500ED3B18 /* NewAccountFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountFormViewController.swift; sourceTree = "<group>"; };
+		C2A370971C634FBD00ED3B18 /* Segue2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue2ViewController.swift; sourceTree = "<group>"; };
+		C2A370991C63511200ED3B18 /* SignInFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFormViewController.swift; sourceTree = "<group>"; };
+		C2A3709B1C63573800ED3B18 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		C2A3709D1C67208000ED3B18 /* SettingsScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScrollViewController.swift; sourceTree = "<group>"; };
+		C2A3709F1C67269A00ED3B18 /* PhotosScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosScrollViewController.swift; sourceTree = "<group>"; };
+		C2A370A11C6727F000ED3B18 /* ExistingSettingsScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingSettingsScrollViewController.swift; sourceTree = "<group>"; };
+		C2A370A31C6728BB00ED3B18 /* FilesScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesScrollViewController.swift; sourceTree = "<group>"; };
+		C2A370A51C672B8400ED3B18 /* FavoritesScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesScrollViewController.swift; sourceTree = "<group>"; };
+		C2A370A71C673A6100ED3B18 /* PdfDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +124,18 @@
 				C2A370631C633C1F00ED3B18 /* AppDelegate.swift */,
 				C2A370651C633C1F00ED3B18 /* ViewController.swift */,
 				C2A370671C633C1F00ED3B18 /* Main.storyboard */,
+				C2A370A71C673A6100ED3B18 /* PdfDetailViewController.swift */,
+				C2A370A51C672B8400ED3B18 /* FavoritesScrollViewController.swift */,
+				C2A370A31C6728BB00ED3B18 /* FilesScrollViewController.swift */,
+				C2A370A11C6727F000ED3B18 /* ExistingSettingsScrollViewController.swift */,
+				C2A3709F1C67269A00ED3B18 /* PhotosScrollViewController.swift */,
+				C2A3709D1C67208000ED3B18 /* SettingsScrollViewController.swift */,
+				C2A3709B1C63573800ED3B18 /* TermsViewController.swift */,
+				C2A370991C63511200ED3B18 /* SignInFormViewController.swift */,
+				C2A370971C634FBD00ED3B18 /* Segue2ViewController.swift */,
+				C2A370951C634EA500ED3B18 /* NewAccountFormViewController.swift */,
+				C2A370931C634D2000ED3B18 /* Segue1ViewController.swift */,
+				C2A370911C634C4900ED3B18 /* NewAccountViewController.swift */,
 				C2A3706A1C633C1F00ED3B18 /* Assets.xcassets */,
 				C2A3706C1C633C1F00ED3B18 /* LaunchScreen.storyboard */,
 				C2A3706F1C633C1F00ED3B18 /* Info.plist */,
@@ -257,7 +293,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A370661C633C1F00ED3B18 /* ViewController.swift in Sources */,
+				C2A370A21C6727F000ED3B18 /* ExistingSettingsScrollViewController.swift in Sources */,
+				C2A370A81C673A6100ED3B18 /* PdfDetailViewController.swift in Sources */,
 				C2A370641C633C1F00ED3B18 /* AppDelegate.swift in Sources */,
+				C2A370A41C6728BB00ED3B18 /* FilesScrollViewController.swift in Sources */,
+				C2A370961C634EA500ED3B18 /* NewAccountFormViewController.swift in Sources */,
+				C2A370941C634D2000ED3B18 /* Segue1ViewController.swift in Sources */,
+				C2A370A61C672B8400ED3B18 /* FavoritesScrollViewController.swift in Sources */,
+				C2A3709E1C67208000ED3B18 /* SettingsScrollViewController.swift in Sources */,
+				C2A3709A1C63511200ED3B18 /* SignInFormViewController.swift in Sources */,
+				C2A370A01C67269A00ED3B18 /* PhotosScrollViewController.swift in Sources */,
+				C2A370921C634C4900ED3B18 /* NewAccountViewController.swift in Sources */,
+				C2A3709C1C63573800ED3B18 /* TermsViewController.swift in Sources */,
+				C2A370981C634FBD00ED3B18 /* Segue2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
