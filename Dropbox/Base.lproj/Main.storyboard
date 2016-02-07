@@ -581,6 +581,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.93609845638275146" green="0.93607044219970703" blue="0.93608629703521729" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uXN-7N-QNv" appends="YES" id="rbg-Um-2w3"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uEQ-Vl-4Fb">
                                 <rect key="frame" x="0.0" y="100" width="320" height="87"/>
@@ -598,13 +603,64 @@
                                     <action selector="backToSegue2:" destination="YDJ-K3-q7F" eventType="touchUpInside" id="1Fm-iq-I0P"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" id="HOq-KG-qoW">
+                                <rect key="frame" x="116" y="106" width="198" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onChange:" destination="YDJ-K3-q7F" eventType="editingChanged" id="YXF-Q0-7he"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="ybf-fR-c4E">
+                                <rect key="frame" x="116" y="150" width="198" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="onChange:" destination="YDJ-K3-q7F" eventType="editingDidEnd" id="vJ4-cc-noz"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" id="KjG-J7-BtG">
+                                <rect key="frame" x="0.0" y="348" width="320" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93568253517150879" green="0.95524889230728149" blue="0.96520149707794189" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vym-9z-wQV">
+                                <rect key="frame" x="254" y="24" width="60" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.69411764705882351" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ifQ-bE-5pb" kind="modal" modalTransitionStyle="flipHorizontal" id="N3Y-gf-IjM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ILT-iu-slO"/>
+                    <connections>
+                        <outlet property="emailField" destination="HOq-KG-qoW" id="3fM-oz-MP9"/>
+                        <outlet property="passwordField" destination="ybf-fR-c4E" id="pJb-9F-tRM"/>
+                        <outlet property="signInButton" destination="vym-9z-wQV" id="Gia-i5-irD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdq-PW-SY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uXN-7N-QNv">
+                    <connections>
+                        <action selector="didTap:" destination="YDJ-K3-q7F" id="RLF-c8-5zQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2178" y="1056"/>
         </scene>
@@ -626,7 +682,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <connections>
-                                    <segue destination="2Q7-qL-weF" kind="modal" animates="NO" id="xQE-Us-Q06"/>
+                                    <segue destination="2Q7-qL-weF" kind="modal" animates="NO" id="Nyq-AK-m05"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hh7-oG-Lqp">
@@ -637,6 +693,12 @@
                                     <segue destination="ifQ-bE-5pb" kind="modal" modalTransitionStyle="flipHorizontal" id="jOX-ZF-kDk"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="bji-Pb-VzP">
+                                <rect key="frame" x="0.0" y="348" width="320" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.9356825352" green="0.95524889229999999" blue="0.96520149710000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -973,8 +1035,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.10000000000000001" contentMode="center" image="khaled" id="MPd-In-Blm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="307"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.10000000000000001" contentMode="center" image="khaled" id="GE2-Pf-aRS">
+                                <rect key="frame" x="0.0" y="307" width="320" height="307"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Started.pdf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="263-jz-CsZ">
-                                <rect key="frame" x="86" y="81" width="149" height="21"/>
+                                <rect key="frame" x="86" y="91" width="149" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -982,16 +1054,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HiL-wA-Gv9">
-                                <rect key="frame" x="28" y="99" width="264" height="237"/>
+                                <rect key="frame" x="28" y="119" width="264" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <mutableString key="text">The key is to drink coconut, fresh coconut, trust me. The key is to drink coconut, fresh coconut, trust me. Let’s see what Chef Dee got that they don’t want us to eat. Hammock talk come soon. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. They key is to have every key, the key to open every door. Special cloth alert. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <string key="text">The key is to drink coconut, fresh coconut, trust me. The key is to drink coconut, fresh coconut, trust me. Let’s see what Chef Dee got that they don’t want us to eat. Hammock talk come soon. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. They key is to have every key, the key to open every door. Special cloth alert. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KKl-o1-soc">
-                                <rect key="frame" x="99" y="349" width="103" height="66"/>
+                                <rect key="frame" x="109" y="372" width="103" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-5" maxY="0.0"/>
@@ -1091,6 +1163,7 @@
         <image name="favorited_btn" width="26" height="25"/>
         <image name="favorites_tab" width="30" height="30"/>
         <image name="files_tab" width="30" height="30"/>
+        <image name="khaled" width="520" height="340"/>
         <image name="logged_out" width="320" height="568"/>
         <image name="photos_tab" width="30" height="30"/>
         <image name="settings" width="320" height="772"/>
@@ -1104,7 +1177,8 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GzP-T7-xxX"/>
+        <segue reference="jOX-ZF-kDk"/>
+        <segue reference="3rV-3N-FEi"/>
         <segue reference="8ky-g9-QY1"/>
         <segue reference="hj3-p6-Qii"/>
     </inferredMetricsTieBreakers>
