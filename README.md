@@ -24,7 +24,7 @@ Completed user stories:
  * [x] Add 4 UIImageViews for the welcome screens.
 
 Notes:
-I'm going to continue working on the optionals until I hit this week's deadline. I couldn't get the buttons on the 4th screen of the walk-through to segue to the signup/signin flows for my swipes implementation. Seemed like this should have been the easy part of that exercise, but I got totally stuck. Would love an extra set of eyes to help me understand was I was doing wrong.
+I'm going to continue working on the optionals until I hit this week's deadline. I couldn't get the buttons on the 4th screen of the walk-through to segue to the signup/signin flows for my swipes implementation. Seemed like this should have been the easy part of that exercise, but I got totally stuck. Would love an extra set of eyes to help me understand was I was doing wrong. UPDATE: Patrick helped me figure out that I had a bunch of useless code that was generating subviews that were interfering with those two buttons. I had to think of the horizontal scroll view as similar to the vertical scroll views, and not attempt to do too much to make it work.
 
 Walkthrough of all user stories:
 
