@@ -80,7 +80,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <connections>
-                                            <segue destination="qWx-8b-YCI" kind="modal" id="m7N-a6-pb0"/>
+                                            <segue destination="qWx-8b-YCI" kind="modal" animates="NO" id="m7N-a6-pb0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j3C-Sv-KBm">
@@ -88,7 +88,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <connections>
-                                            <segue destination="65i-Xf-sXU" kind="modal" id="f4F-dY-Sex"/>
+                                            <segue destination="65i-Xf-sXU" kind="modal" animates="NO" id="f4F-dY-Sex"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -876,8 +876,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="favorited" id="Qi4-id-qAg">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="favorited" id="6B0-Ug-afL">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="empty_favorites" id="H93-7K-eXI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <animations/>
                                     </imageView>
@@ -890,7 +895,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="Lim-Y9-Wla"/>
                     <connections>
+                        <outlet property="emptyFavoritesImage" destination="H93-7K-eXI" id="FVu-cp-XGY"/>
                         <outlet property="favoritesScrollView" destination="0ut-Gi-xq1" id="L0u-yS-z4j"/>
+                        <outlet property="updatedFavoritesImage" destination="6B0-Ug-afL" id="Gf3-7g-OTh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUm-Wd-DR8" userLabel="First Responder" sceneMemberID="firstResponder"/>

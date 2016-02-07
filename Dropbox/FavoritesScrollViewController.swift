@@ -11,6 +11,8 @@ import UIKit
 class FavoritesScrollViewController: UIViewController {
 
     @IBOutlet weak var favoritesScrollView: UIScrollView!
+    @IBOutlet weak var emptyFavoritesImage: UIImageView!
+    @IBOutlet weak var updatedFavoritesImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

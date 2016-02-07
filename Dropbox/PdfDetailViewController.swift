@@ -10,6 +10,10 @@ import UIKit
 
 class PdfDetailViewController: UIViewController {
 
+    @IBOutlet weak var favoritesScrollView: UIScrollView!
+    @IBOutlet weak var emptyFavoritesImage: UIImageView!
+    @IBOutlet weak var updatedFavoritesImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +27,9 @@ class PdfDetailViewController: UIViewController {
     
     @IBAction func onLikeButton(sender: UIButton) {
         sender.selected = true
-//        FavoritesScrollViewController.loadView()
+//        FavoritesScrollViewController.image=UIImage(named: "empty_favorites")
+//        FavoritesScrollViewController.image=UIImage(named: "favorited")
+        
     }
 
     /*
