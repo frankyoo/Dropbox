@@ -28,6 +28,6 @@ I'm going to continue working on the optionals until I hit this week's deadline.
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](dropbox.gif)
+![Video Walkthrough](dropbox2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
